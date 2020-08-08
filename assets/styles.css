@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgba(25, 28, 32, 0.9);
+}
+
+#background-img {
+    height: 350px;
+    width: 100%;
+    font-size: 20px;
+    background: linear-gradient(180deg, rgba(25, 28, 32, 1) 0%, rgba(43, 46, 55, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    text-align: center;
+    color: white;
+    padding: 60px;
+    position: relative;
+}
+
+#background-img > img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    stroke: 2px black solid;
+    position: relative;
+    z-index: 1;
+}
+.list {
+    position: absolute;
+    background-color: white;
+    padding: 25px;
+    width: 100%;
+    top: 115px;
+    z-index: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.title-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 225px;
+}
+.title-container h1,
+h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.title-container h1 {
+    color: rgba(255, 255, 255, 0.9);
+}
+.title-container h2 {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.about-container {
+    margin: 0 auto;
+    padding: 32px 25%;
+    text-align: center;
+}
+.timeline-container-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.timeline-container {
+    display: flex;
+}
+.timeline {
+    flex-basis: 35%;
+}
+.timeline h1 {
+    font-size: 32px;
+    color: rgba(25, 28, 32, 0.9);
+}
+.spacer {
+    flex-basis: 10%;
+}
+.spacer-double {
+    flex-basis: 20%;
+}
+.pengalaman-kerja {
+    margin-top: 32px;
+}
+.pengalaman-kerja h2 {
+    text-align: left;
+}
+.lokasi-kerja-container {
+    display: flex;
+    margin: 5px 0 0;
+}
+.lokasi-kerja {
+    flex-basis: 50%;
+}
+.lokasi-kerja p {
+    display: inline;
+    font-size: 12px;
+}
+.lokasi-kerja img {
+    height: 15px;
+}
+.pengalaman-kerja .detail-kerja {
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+.contact-container a,
+.social-media a {
+    color: inherit;
+    text-decoration: none;
+}
+.social-media a:hover, .contact-detail a:hover {
+    font-weight: 700;
+}
+.contact-container p,
+.social-media p {
+    display: inline-block;
+    margin: 5px;
+}
+.contact-container div > img,
+.social-media div > img {
+    height: 15px;
+}
+
+.social-media ul {
+    margin: unset;
+    padding: unset;
+}
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media-container ul li a > img {
+    height: 15px;
+}
+
+footer {
+    padding: 16px 0;
+    margin-top: 48px;
+    background-color: rgba(43, 46, 55, 1);
+}
+
+.credit div,
+.credit div > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-container {
+    display: flex;
+}
+.footer-content ul > li{
+    margin: 5px 0;
+    cursor: pointer;
+}
+.footer-content p > a {
+    text-decoration: none;
+    color: inherit;
+}
+.footer-content p > a:hover, .footer-content ul > li:hover {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+.footer-content {
+    padding: 10px;
+    flex-basis: 30%;
+}
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.credit p {
+    font-size: 14px;
+}
+@media screen and (max-width: 513px) {
+    .timeline-container {
+        display: block;
+        margin: 16px;
+    }
+    .title-container h2 {
+        font-weight: 300;
+        margin: 0 32px;
+    }
+    .about-container {
+        padding: 32px;
+    }
+
+    .footer-container {
+        display: block;
+    }
+}
