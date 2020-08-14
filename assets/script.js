@@ -28,7 +28,8 @@ Credit to <a target="_blank" href="https://www.flaticon.com/authors/good-ware">G
 <a target="_blank" href="https://www.flaticon.com/authors/pause08">Pause08</a>,
 <a target="_blank" href="https://www.flaticon.com/authors/tomas-knop">Tomas Knop</a>,
 <a target="_blank" href="https://www.flaticon.com/authors/freepik">Freepik</a>,
-<a target="_blank" href="https://www.flaticon.com/authors/pixel-perfect">Pixel</a>`]
+<a target="_blank" href="https://www.flaticon.com/authors/pixel-perfect">Pixel</a>
+<a target="_blank" href="https://www.flaticon.com/authors/icongeek26">icongeek26</a>`]
 for (let i = 0; i < footerTitle.length; i++) {
     let createEleTitle;
     let createEleContent;
@@ -58,3 +59,7 @@ for (let i = 0; i < getAllH1.length; i++) {
         break;
     }
 }
+
+const getObjective = document.querySelector(".about-container h1");
+getObjective.style.textTransform = 'uppercase';
+console.log(getObjective)
